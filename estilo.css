@@ -1,0 +1,121 @@
+body{
+    margin: 30px;
+}
+.conteudo{
+    background-color:#932019;
+    margin: 10px 10px;
+    border-radius: 10px;
+    color: #fafafa;
+}
+.cardapio{
+    background-color:#7A0801;
+    margin: 0px 300px;
+    border-radius: 10px;
+}
+h1{
+    white-space: nowrap;
+    color: #000;
+    font-weight: bolder;
+    font-size: 60px;
+    margin-left: 10px;
+}
+.titulo{
+    margin: 0px 0px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background-color:#FCD753;
+    border-radius: 10px 10px 0px 0px;
+}
+h2{
+    padding: 10px 20px 0px;
+    margin: 0px;
+}
+ul{
+    list-style: none;
+    padding: 10px 30px;
+    margin: 0px;
+    list-style: none;
+}
+li{
+    display: flex;
+}
+.Preco{
+    flex: 1;
+    text-align: end;
+    font-weight: bolder;
+    font-size: larger;
+}
+.Item{
+    flex: 1;
+    font-weight: bolder;
+    font-size: larger;
+}
+img{
+    max-width: 150px;  
+    margin-right: 10px;
+}
+.logo{
+    max-width: 150px;  
+    justify-self: end;
+}
+.contato{
+    display: grid;
+    justify-content: center;
+}
+h3{
+    margin: 5px 20px;
+    color: #fafafa;
+    text-align: center;
+}
+.imagens{
+    display: flex; /* Usar flexbox para centralizar conteúdo */
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
+    gap: 10px; /* Espaçamento entre imagens */
+    overflow-x: auto;
+
+}
+@media (max-width: 1350px){
+    .titulo h1 {
+        font-size: 50px;        
+    }
+    .titulo img {
+        max-width: 120px;        
+    }
+    .imagens img{
+        max-width: 100px;   
+    }
+}
+@media (max-width: 1250px){
+    .titulo h1 {
+        font-size: 30px;        
+    }
+    .titulo img {
+        max-width: 80px;        
+    }
+    .body{
+        margin: 0px;
+    }
+    .cardapio{
+        margin: 0px 200px;
+    }
+
+}
+@media (max-width: 1250px){
+    .cardapio{
+        margin: 0px 100px;
+    }
+}
+@media (max-width: 600px){
+    .cardapio{
+        margin: 0px 10px;
+    }
+    .titulo img {
+        max-width: 70px;        
+    }
+    .imagens img{
+        max-width: 90px;   
+    }
+}
+
